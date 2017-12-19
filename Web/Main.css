@@ -1,0 +1,42 @@
+#headline {
+  text-align: center;
+}
+
+#wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+
+#headline {
+  flex: none;
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+#content {
+  flex: 1;
+  display:flex;
+  display: block;
+}
+
+html,
+body  {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: "Algerian", Arial, sans-serif;
+  text-shadow: 0 0 5px black;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+}
