@@ -1,156 +1,197 @@
-<script type="text/javascript">
-  alert("Hi");
-  $(function(){
-    var dd = today.getDate();
-    $("#dayOne").click(function(){
-      if(dd>=1){
-        $("dayOne").html("");
-        $("dayOne").html("<img src='\\rsc\\jpg\\1._Turchen.jpg'/>");
-      }
-    });
-    $("#dayTwo").click(function(){
-      if(dd>=2){
-        $("dayTwo").html("");
-        $("dayTwo").html("<img src='\\rsc\\jpg\\2._Turchen.jpg'/>");
-      }
-    });
-    $("#dayThree").click(function(){
-      if(dd>=3){
-        $("dayThree").html("");
-        $("dayThree").html("<img src='\\rsc\\jpg\\3._Turchen.jpg'/>");
-      }
-    });
-    $("#dayFour").click(function(){
-      if(dd>=4){
-        $("dayFour").html("");
-        $("dayFour").html("<img src='\\rsc\\jpg\\4._Turchen.jpg'/>");
-      }
-    });
-    $("#dayFive").click(function(){
-      if(dd>=5){
-        $("dayFive").html("");
-        $("dayFive").html("<img src='\\rsc\\jpg\\5._Turchen.jpg'/>");
-      }
-    });
-    $("#daySix").click(function(){
-      if(dd>=6){
-        $("daySix").html("");
-        $("daySix").html("<img src='\\rsc\\jpg\\6._Turchen.jpg'/>");
-      }
-    });
-    $("#daySeven").click(function(){
-      if(dd>=7){
-        $("daySeven").html("");
-        $("daySeven").html("<img src='\\rsc\\jpg\\7._Turchen.jpg'/>");
-      }
-    });
-    $("#dayEight").click(function(){
-      if(dd>=8){
-        $("dayEight").html("");
-        $("dayEight").html("<img src='\\rsc\\jpg\\8._Turchen.jpg'/>");
-      }
-    });
-    $("#dayNine").click(function(){
-      if(dd>=9){
-        $("dayNine").html("");
-        $("dayNine").html("<img src='\\rsc\\jpg\\9._Turchen.jpg'/>");
-      }
-    });
-    $("#dayTen").click(function(){
-      if(dd>=10){
-        $("dayTen").html("");
-        $("dayTen").html("<img src='\\rsc\\jpg\\10._Turchen.jpg'/>");
-      }
-    });
-    $("#dayEleven").click(function(){
-      if(dd>=11){
-        $("dayEleven").html("");
-        $("dayEleven").html("<img src='\\rsc\\jpg\\11._Turchen.jpg'/>");
-      }
-    });
-    $("#dayTwelve").click(function(){
-      if(dd>=12){
-        $("dayTwelve").html("");
-        $("dayTwelve").html("<img src='\\rsc\\jpg\\12._Turchen.jpg'/>");
-      }
-    });
-    $("#dayThirteen").click(function(){
-      if(dd>=13){
-        $("dayThirteen").html("");
-        $("dayThirteen").html("<img src='\\rsc\\jpg\\13._Turchen.jpg'/>");
-      }
-    });
-    $("#dayFourteen").click(function(){
-      if(dd>=14){
-        $("dayFourteen").html("");
-        $("dayFourteen").html("<img src='\\rsc\\jpg\\14._Turchen.jpg'/>");
-      }
-    });
-    $("#dayFifteen").click(function(){
-      if(dd>=15){
-        $("dayFifteen").html("");
-        $("dayFifteen").html("<img src='\\rsc\\jpg\\15._Turchen.jpg'/>");
-      }
-    });
-    $("#daySixteen").click(function(){
-      if(dd>=16){
-        $("daySixteen").html("");
-        $("daySixteen").html("<img src='\\rsc\\jpg\\16._Turchen.jpg'/>");
-      }
-    });
-    $("#daySeventeen").click(function(){
-      if(dd>=17){
-        $("daySeventeen").html("");
-        $("daySeventeen").html("<img src='\\rsc\\jpg\\17._Turchen.jpg'/>");
-      }
-    });
-    $("#dayEighteen").click(function(){
-      if(dd>=18){
-        $("dayEighteen").html("");
-        $("dayEighteen").html("<img src='\\rsc\\jpg\\18._Turchen.jpg'/>");
-      }
-    });
-    $("#dayNineteen").click(function(){
-      if(dd>=19){
-        $("dayNineteen").html("");
-        $("dayNineteen").html("<img src='\\rsc\\jpg\\19._Turchen.jpg'/>");
-      }
-    });
-    $("#dayTwenty").click(function(){
-      if(dd>=20){
-        $("dayTwenty").html("");
-        $("dayTwenty").html("<img src='\\rsc\\jpg\\20._Turchen.jpg'/>");
-      }
-    });
-    $("#dayTwentyone").click(function(){
-      if(dd>=21){
-        $("dayTwentyone").html("");
-        $("dayTwentyone").html("<img src='\\rsc\\jpg\\21._Turchen.jpg'/>");
-      }
-    });
-    $("#dayTwentytwo").click(function(){
-      if(dd>=22){
-        $("dayTwentytwo").html("");
-        $("dayTwentytwo").html("<img src='\\rsc\\jpg\\22._Turchen.jpg'/>");
-      }
-    });
-    $("#dayTwentythree").click(function(){
-      if(dd>=23){
-        $("dayTwentythree").html("");
-        $("dayTwentythree").html("<img src='\\rsc\\jpg\\23._Turchen.jpg'/>");
-      }
-    });
-    $("#dayTwentyfour").click(function(){
-      if(dd>=24){
-        $("dayTwentyfour").html("");
-        $("dayTwentyfour").html("<img src='\\rsc\\jpg\\24._Turchen.jpg'/>");
-      }
-    });
-    function Modal(var day){
-      $("modaldiv").html("<div class='modal fade' id='myModal' role='dialog'><div class='modal-dialog modal-sm'><div class='modal-content'><div class='modal-header'><button type='button' class='close' data-dismiss='modal'>&times;</button><h4 class='modal-title'>"+day+"</h4></div><div class='modal-body'><p>This is a small modal.</p></div><div class='modal-footer'><button type='button' class='btn btn-default' data-dismiss='modal' id='closeButton'>Close</button></div></div></div></div>");
-      $("closeButton").click(function(){
-        $("myModal").html("");
-      })
+$(function(){
+    d = new Date();
+    day = d.getUTCDate();
+    month = d.getUTCMonth();
+  $("#dayOne").click(function(){
+    if(day>=1){
+      $("#dayOne").html("");
+      $("#dayOne").html("<img src='rsc\\jpg\\1._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (1 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet werden!")
     }
   });
-</script>
+  $("#dayTwo").click(function(){
+    if(day>=2){
+      $("#dayTwo").html("");
+      $("#dayTwo").html("<img src='rsc\\jpg\\2._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (2 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#dayThree").click(function(){
+    if(day>=3){
+      $("#dayThree").html("");
+      $("#dayThree").html("<img src='rsc\\jpg\\3._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (3 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#dayFour").click(function(){
+    if(day>=4){
+      $("#dayFour").html("");
+      $("#dayFour").html("<img src='rsc\\jpg\\4._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (4 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#dayFive").click(function(){
+    if(day>=5){
+      $("#dayFive").html("");
+      $("#dayFive").html("<img src='rsc\\jpg\\5._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (5 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#daySix").click(function(){
+    if(day>=6){
+      $("#daySix").html("");
+      $("#daySix").html("<img src='rsc\\jpg\\6._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (6 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#daySeven").click(function(){
+    if(day>=7){
+      $("#daySeven").html("");
+      $("#daySeven").html("<img src='rsc\\jpg\\7._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (7 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#dayEight").click(function(){
+    if(day>=8){
+      $("#dayEight").html("");
+      $("#dayEight").html("<img src='rsc\\jpg\\8._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (8 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#dayNine").click(function(){
+    if(day>=9){
+      $("#dayNine").html("");
+      $("#dayNine").html("<img src='rsc\\jpg\\9._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (9 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#dayTen").click(function(){
+    if(day>=10){
+      $("#dayTen").html("");
+      $("#dayTen").html("<img src='rsc\\jpg\\10._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (10 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#dayEleven").click(function(){
+    if(day>=11){
+      $("#dayEleven").html("");
+      $("#dayEleven").html("<img src='rsc\\jpg\\11._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (11 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#dayTwelve").click(function(){
+    if(day>=12){
+      $("#dayTwelve").html("");
+      $("#dayTwelve").html("<img src='rsc\\jpg\\12._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (12 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#dayThirteen").click(function(){
+    if(day>=13){
+      $("#dayThirteen").html("");
+      $("#dayThirteen").html("<img src='rsc\\jpg\\13._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (13 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#dayFourteen").click(function(){
+    if(day>=14){
+      $("#dayFourteen").html("");
+      $("#dayFourteen").html("<img src='rsc\\jpg\\14._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (14 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#dayFifteen").click(function(){
+    if(day>=15){
+      $("#dayFifteen").html("");
+      $("#dayFifteen").html("<img src='rsc\\jpg\\15._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (15 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#daySixteen").click(function(){
+    if(day>=16){
+      $("#daySixteen").html("");
+      $("#daySixteen").html("<img src='rsc\\jpg\\16._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (16 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#daySeventeen").click(function(){
+    if(day>=17){
+      $("#daySeventeen").html("");
+      $("#daySeventeen").html("<img src='rsc\\jpg\\17._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (17 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#dayEighteen").click(function(){
+    if(day>=18){
+      $("#dayEighteen").html("");
+      $("#dayEighteen").html("<img src='rsc\\jpg\\18._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (18 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#dayNineteen").click(function(){
+    if(day>=19){
+      $("#dayNineteen").html("");
+      $("#dayNineteen").html("<img src='rsc\\jpg\\19._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (19 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#dayTwenty").click(function(){
+    if(day>=20){
+      $("#dayTwenty").html("");
+      $("#dayTwenty").html("<img src='rsc\\jpg\\20._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (20 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#dayTwentyone").click(function(){
+    if(day>=21){
+      $("#dayTwentyone").html("");
+      $("#dayTwentyone").html("<img src='rsc\\jpg\\21._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (21 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#dayTwentytwo").click(function(){
+    if(day>=22){
+      $("#dayTwentytwo").html("");
+      $("#dayTwentytwo").html("<img src='rsc\\jpg\\22._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (22 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#dayTwentythree").click(function(){
+    if(day>=23){
+      $("#dayTwentythree").html("");
+      $("#dayTwentythree").html("<img src='rsc\\jpg\\23._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (23 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+  $("#dayTwentyfour").click(function(){
+    if(day>=24){
+      $("#dayTwentyfour").html("");
+      $("#dayTwentyfour").html("<img src='rsc\\jpg\\24._Turchen.jpg'/>");
+    }else {
+      alert("Dieses Türchen kann erst in " + (24 - day) + " Tagen und "+ (11 - month )+" Monaten geöffnet geöffnet werden!")
+    }
+  });
+});
